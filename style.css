@@ -32,6 +32,7 @@
     }
     .overlay::after {
         /* Add content : "X" */
+        content: "X";
         /* White text color */
         /* Black background color */
         /* Font family "sans-serif" */
