@@ -26,6 +26,7 @@
         /* Add a pointer on hover */
         cursor: pointer;
         /* Use a grid for easy centering */
+        display: grid;
         /* Center vertically and horizontally */
     }
     .overlay::after {
