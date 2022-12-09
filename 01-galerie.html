@@ -8,13 +8,18 @@
     <link rel="stylesheet" href="/style.css">
     <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
-<body x-data="{imageChien:'https://picsum.photos/id/237/400/300'}">
+<body x-data="{imageAffichee:'https://picsum.photos/id/237/400/300'}">
     <h1>Galerie</h1>
     <p>lorem</p>
-    <div class="overlay" x-show="imageChien" @click="imageChien = null" @keyup.escape.window="imageChien = null">
+    <img src="https://picsum.photos/id/237/40/60" alt="miniature chiot"
+        @click="imageAffichee = 'https://picsum.photos/id/237/400/300'">
+<img src="https://picsum.photos/id/236/40/60" alt="miniature maison"
+        @click="imageAffichee = 'https://picsum.photos/id/236/200/300'">
+    <div class="overlay" x-show="imageAffichee" @click="imageAffichee = null" @keyup.escape.window="imageAffichee = null">
         <figure>
-            <img :src="imageChien" alt="image 237... un chiot">
+            <img :src="imageAffichee" alt="image 237... un chiot">
         </figure>
     </div>
 </body>
 </html>
+
